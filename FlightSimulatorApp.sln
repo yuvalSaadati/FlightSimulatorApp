@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSimulatorApp", "FlightSimulatorApp\FlightSimulatorApp.csproj", "{196E6F77-D80F-420E-942A-B36344328224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{196E6F77-D80F-420E-942A-B36344328224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196E6F77-D80F-420E-942A-B36344328224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196E6F77-D80F-420E-942A-B36344328224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196E6F77-D80F-420E-942A-B36344328224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DB03F96-F3F5-4C32-B18C-83E161A37299}
+	EndGlobalSection
+EndGlobal
