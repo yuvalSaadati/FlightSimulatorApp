@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Sockets;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using FlightSimulatorApp.Models;
+using FlightSimulatorApp.ViewModels;
 
 namespace FlightSimulatorApp
 {
@@ -20,9 +11,16 @@ namespace FlightSimulatorApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        Model myModel;
+        JoystickVM joystickVM;
+        [Obsolete]
         public MainWindow()
         {
             InitializeComponent();
+            TcpClient telnetClient = new TcpClient();
+            myModel = new Model(telnetClient);
+            joystickVM = new JoystickVM(myModel);
+            this.DataContext = joystickVM;
         }
     }
 }
