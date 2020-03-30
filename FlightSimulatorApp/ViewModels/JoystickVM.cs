@@ -12,9 +12,9 @@ namespace FlightSimulatorApp.ViewModels
     class JoystickVM : INotifyPropertyChanged
     {
         private Model myModel;
-        private string name = "world!";
+        private string name = "wKKorld!";
         public event PropertyChangedEventHandler PropertyChanged;
-
+        
         public JoystickVM(Model myModel)
         {
             this.myModel = myModel;
